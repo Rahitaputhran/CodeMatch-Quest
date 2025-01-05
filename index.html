@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Memory Game</title>
+</head>
+<body class="bg-slate-300 min-h-screen flex flex-col items-center justify-center px-4">
+    <!-- Main Game Container -->
+    <div class="bg-black max-w-screen-md w-full rounded-md text-white border-2 border-lime-400 flex flex-col items-center p-4">
+        <!-- Responsive Grid for Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <!-- Card Elements -->
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="1" style="background-image: url('https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="2" style="background-image: url('https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="3" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQFOy9YRYwot4Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1710593012614?e=2147483647&v=beta&t=P_y6NoM8gl6VOuivuV8fmIBtHzPMIfqvY7Usa-l44j4');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="4" style="background-image: url('https://shethink.in/wp-content/uploads/2021/07/react.js-img.png');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="1" style="background-image: url('https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="5" style="background-image: url('https://ih1.redbubble.net/image.2189776566.6167/raf,360x360,075,t,fafafa:ca443f4786.jpg');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="5" style="background-image: url('https://ih1.redbubble.net/image.2189776566.6167/raf,360x360,075,t,fafafa:ca443f4786.jpg');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="6" style="background-image: url('https://i.ytimg.com/vi/aaHWf7o_jns/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWWjLeHo0h97SKw37j0flp7QJVuw');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="4" style="background-image: url('https://shethink.in/wp-content/uploads/2021/07/react.js-img.png');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="6" style="background-image: url('https://i.ytimg.com/vi/aaHWf7o_jns/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWWjLeHo0h97SKw37j0flp7QJVuw');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="3" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQFOy9YRYwot4Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1710593012614?e=2147483647&v=beta&t=P_y6NoM8gl6VOuivuV8fmIBtHzPMIfqvY7Usa-l44j4');" id="image"></div>
+            </div>
+            <div class="border-2 border-lime-400 flex items-center justify-center">
+                <div class="opacity-0 bg-no-repeat bg-contain h-24 w-24" data-pair="2" style="background-image: url('https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png');" id="image"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Score Section -->
+    <div class="bg-stone-600 w-full max-w-screen-md h-12 rounded-md flex justify-between items-center px-4 mt-4">
+        <p class="text-lg" id="userscore">UserScore:</p>
+        <p class="text-lg" id="score">0</p>
+    </div>
+
+    <script src="alive.js"></script>
+</body>
+</html>
